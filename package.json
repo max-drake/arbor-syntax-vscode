@@ -1,0 +1,32 @@
+{
+  "name": "arbor-syntax-highlighting",
+  "displayName": "Arbor Syntax Highlighting",
+  "description": "Adds custom syntax highlighting for the Arbor scripting language used in Fermat (fermat.ws)",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.76.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "arbor",
+      "aliases": ["Arbor", "arbor"],
+      "extensions": [".ar",".arbor"],
+      "configuration": "./language-configuration.json"
+    }],
+    "themes": [
+      {
+          "label": "Arbor Syntax Highlighting",
+          "uiTheme": "vs-dark",
+          "path": "./themes/arbor-custom-theme.json"
+      }
+  ], 
+    "grammars": [{
+      "language": "arbor",
+      "scopeName": "source.ar",
+      "path": "./syntaxes/arbor.tmLanguage.json"
+    }]
+  }
+}

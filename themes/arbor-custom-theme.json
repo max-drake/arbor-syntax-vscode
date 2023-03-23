@@ -1,0 +1,102 @@
+{
+    "name": "Arbor Syntax Highlighting",
+    "type": "vs-dark",
+    "colors": {
+        "editor.background": "#1E1E1E",
+        "editor.foreground": "#D4D4D4"
+    },
+    "tokenColors": [
+        {
+            "name": "Keyword",
+            "scope": "keyword.control.arbor",
+            "settings": {
+                "foreground": "#3291D3"
+            }
+        },
+        {
+            "name": "Builtin",
+            "scope": "support.function.builtin.arbor",
+            "settings": {
+                "foreground": "#E08E45"
+            }
+        },
+        {
+            "name": "Block",
+            "scope": "keyword.control.block.arbor",
+            "settings": {
+                "foreground": "#3291D3"
+            }
+        },
+        {
+            "name": "Operator",
+            "scope": "keyword.operator.arbor",
+            "settings": {
+                "foreground": "#E85D75"
+            }
+        },
+        {
+            "name": "Comment",
+            "scope": [
+                "comment.line.double-slash.arbor",
+                "comment.line.number-sign.arbor"
+            ],
+            "settings": {
+                "foreground": "#A5C727"
+            }
+        },
+        {
+            "name": "Identifier",
+            "scope": "meta.identifier.arbor",
+            "settings": {
+                "foreground": "black"
+            }
+        },
+        {
+            "name": "Number",
+            "scope": [
+                "constant.numeric.integer.decimal.arbor",
+                "constant.numeric.integer.zero.arbor",
+                "constant.numeric.float.arbor"
+            ],
+            "settings": {
+                "foreground": "#FFBB3A"
+            }
+        },
+        {
+            "name": "String",
+            "scope": "string.quoted.arbor",
+            "settings": {
+                "foreground": "#52CCC1"
+            }
+        },
+        {
+            "name": "Entity",
+            "scope": "meta.entity.arbor",
+            "settings": {
+                "foreground": "black"
+            }
+        },
+        {
+            "name": "Property",
+            "scope": "meta.property.arbor",
+            "settings": {
+                "foreground": "#2E877F"
+            }
+        },
+        {
+            "name": "Values",
+            "scope": "constant.language.boolean.arbor",
+            "settings": {
+                "foreground": "#9D72D7",
+                "fontStyle": "italic"
+            }
+        },
+        {
+            "name": "Filler",
+            "scope": "text.filler.arbor",
+            "settings": {
+                "foreground": "#a2a2a2"
+            }
+        }
+    ]
+}

@@ -1,0 +1,93 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+    "name": "Arbor",
+    "patterns": [
+        {
+            "match": "[_A-Za-z$][_A-Za-z0-9$]*",
+            "name": "meta.identifier.arbor"
+        },
+        {
+            "match": "\\b[0-9a-f]{8}\\b-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-\\b[0-9a-f]{12}\\b",
+            "name": "meta.entity.arbor"
+        },
+        {
+            "match": "\\/\\/.*",
+            "name": "comment.line.double-slash.arbor"
+        },
+        {
+            "match": "\\#.*",
+            "name": "comment.line.number-sign.arbor"
+        },
+        {
+            "match": "\\d*\\.\\d+(e[\\+\\-]?\\d+)?",
+            "name": "constant.numeric.float.arbor"
+        },
+        {
+            "match": "\\d+\\.\\d*",
+            "name": "constant.numeric.float.arbor"
+        },
+        {
+            "match": "\\.\\d+",
+            "name": "constant.numeric.float.arbor"
+        },
+        {
+            "match": "[1-9]\\d*(e[\\+\\-]?\\d+)?L?",
+            "name": "constant.numeric.integer.decimal.arbor"
+        },
+        {
+            "match": "0(?![\\dx])",
+            "name": "constant.numeric.integer.zero.arbor"
+        },
+        {
+            "begin": "(['\"])",
+            "beginCaptures": {
+                "1": {
+                    "name": "punctuation.definition.string.begin.arbor"
+                }
+            },
+            "end": "\\1",
+            "endCaptures": {
+                "1": {
+                    "name": "punctuation.definition.string.end.arbor"
+                }
+            },
+            "name": "string.quoted.arbor",
+            "patterns": [
+                {
+                    "match": "\\\\.",
+                    "name": "constant.character.escape.arbor"
+                }
+            ]
+        },
+        {
+            "match": "\\+|\\-|%|\\*|\\/|\\^|>|<|<=|>=|!=|=|==|is|is not|in|contains",
+            "name": "keyword.operator.arbor"
+        },
+        {
+            "match": "it",
+            "name": "variable.language.implicit.arbor"
+        },
+        {
+            "match": "true|false",
+            "name": "constant.language.boolean.arbor"
+        },
+        {
+            "match": ":|end",
+            "name": "keyword.control.block.arbor"
+        },
+        {
+            "match": "YOUR_KEYWORDS_HERE",
+            "name": "keyword.control.arbor"
+        },
+        {
+            "match": "YOUR_BUILTINS_HERE",
+            "name": "support.function.builtin.arbor"
+        },
+        {
+            "match": "YOUR_FILLERS_HERE",
+            "name": "text.filler.arbor"
+        }
+    ],
+    "repository": {},
+	"scopeName": "source.ar"
+}
